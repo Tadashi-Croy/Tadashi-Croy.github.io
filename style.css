@@ -1,0 +1,43 @@
+:root{
+    --clr-periwink: #c3c9e9;
+    --clr-olive: #a1ba89;
+    --clr-coral: #ec9192;
+    --clr-charc: #373F47;
+    --clr-bluegray: #6C91C2;
+    --clr-bkg: #E2E6F3;
+
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--clr-bkg);
+
+}
+
+.welcome{
+    text-align: center;
+    padding: 3px;
+    margin: 0 0 5px 0;
+    border-radius: 1px;
+}
+.p-red{
+    background: linear-gradient(45deg, var(--clr-bluegray), var(--clr-bkg));
+}
+
+.top-main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.intro{
+    text-align: center;
+    width: 30%;
+    
+
+}
