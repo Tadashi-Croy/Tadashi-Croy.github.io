@@ -20,6 +20,11 @@ body{
 
 }
 
+.main{
+    background: repeating-linear-gradient(45deg, white, var(--clr-bkg) 30%, var(--clr-bkg) 70%, white 100%)
+}
+
+
 .welcome{
     text-align: center;
     padding: 3px;
@@ -27,7 +32,10 @@ body{
     border-radius: 1px;
 }
 .p-red{
-    background: linear-gradient(45deg, var(--clr-bluegray), var(--clr-bkg));
+    background: linear-gradient(180deg, var(--clr-bluegray), var(--clr-bkg));
+    
+
+
 }
 
 .top-main{
@@ -40,4 +48,8 @@ body{
     width: 30%;
     
 
+}
+#resume:hover {
+    
+    
 }
