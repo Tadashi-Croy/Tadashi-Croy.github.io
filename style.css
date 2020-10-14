@@ -21,13 +21,16 @@ body{
     color: #707070;
     font-family: 'Lora', serif;
     height: 100%;
-    margin-bottom: 0.25rem;
+    /* margin-bottom: 0.25rem; */
 }
 
 h1{
     color: var(--clr-charc);
 }
-
+.title{
+    color: black;
+    font-weight: 700;
+}
 
 .main{
     height: 100%;
@@ -38,9 +41,21 @@ h1{
     border: 1px inset var(--clr-coral);
     border-top: none;
     border-bottom: none;
+    box-shadow: 1px 1px 10px 1px rgb(216, 216, 216);
     
     
 }
+
+.inWorkSign{
+    border: 2px solid black;
+    width: 50%;
+    transform: rotateZ(-5deg);
+    background: rgb(255, 255, 201);
+    box-shadow: 1px 0px 1px 1px rgba(0, 0, 0, 0.425);
+    margin: .25rem;
+    
+}
+
 .top{
 
   text-align: center;
@@ -120,6 +135,8 @@ p{
 img{
     width: 90%;
     max-width: 200px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px 1px black;
 }
 
 
@@ -132,6 +149,9 @@ img{
    .main{
        height: 100%;
        max-width: 1200px;
+   }
+   .inWorkSign{
+       width:33%;
    }
 
     .bottom{
@@ -167,6 +187,9 @@ img{
         justify-content: space-evenly;
 
     }  
+    .inWorkSign{
+        width: 25%;
+    }
    
    .top-main{
        flex-direction: row;
@@ -235,5 +258,15 @@ img{
         z-index: 10;
     } */
 
+
+}
+
+.gone{
+    display: none;
+}
+
+
+
+@keyframes{
 
 }

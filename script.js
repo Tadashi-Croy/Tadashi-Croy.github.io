@@ -1,2 +1,11 @@
+let app = new Vue({
+    el: '#app',
+    data: {
+        message: "",
+        seer: false,
 
-$("h4").addClass("animated hinge");
+    },
+    created(){
+        console.log('This is a test')
+    }
+})

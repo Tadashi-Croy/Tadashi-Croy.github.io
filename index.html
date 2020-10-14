@@ -3,62 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew The Dashing Developer</title>
+    <title>Andrew Croy: The Dashing Developer</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src="script.js"></script>
     <script src="https://kit.fontawesome.com/cdc9299abe.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="app">
+
     <div class="main">
         <h1 class=" welcome p-red">Welcome Fellow Traveler!</h1>
-        <h3>Pardon the Mess! <br> We're Under Construction!</h3>
+        <h3 class= "inWorkSign" v-bind:class= "{ gone:seer}" @click= "seer =true" >Pardon the Mess! <br> We're Under Construction!</h3>
         
         <div class="top">
             
             <div class="top-main">
                 <p class="intro">
                 Hi there! My name is <b>Andrew Croy </b>.
-                I'm a up and coming web developer. So far in my short time on the internet I've learned Python, HTML/CSS, Javascript, Vue, and Django.
+                I'm a up and coming Software developer. So far I've learned Python, HTML/CSS, Javascript, Vue, and Django.
 
                 Although I've just recently started learning programming and development, I've been working with all kinds of technology.
 
-                I was a nuclear Electrician in the Navy, I've messed with motors, hung off the sides of massive generators, qualified aerospace electronics, 
-                and so many more crazy and wonderful experiences. It's my hope you let me share all I've learned with you.<br>
+                I was a Nuclear Electrician in the Navy, I've messed with motors, hung off the sides of massive generators, qualified aerospace electronics, automated test systems and so many more crazy and wonderful experiences. It's my hope you let me share all I've learned with you.<br>
                 <br>
                 </p>
 
 
-                <p class=" right-intro"> After the Navy, I went on to go to the PDX Code Guild to start my journey.
+                <p class=" right-intro"> After the Navy, I went to the PDX Code Guild to start my journey.
                      Right now I am currently polishing my skills at Vue.js and Django as well as diving into Deep learning/Machine Learning.</p>
             </div>
             
-            <p><em>Now come on in and have a look around</em>.
+            <!-- <p><em>Now come on in and have a look around</em>. -->
             </p>
         </div>
         
-        <br>
-
-        <div class="bottom">
-            
-            <div class="top">
+         <div class="top">
                 
                 <img src="https://picsum.photos/200" alt="">
                 
-                <p>
-                    
+                <p>Since I've gone through a lot of non-traditional training that not everyone is familiar with, I like to give details about them:
                 </p>
-                
-                
+                <div class="schools">
+                    
+                    <div class="pdxcode">
+                        <p class="title">PDX Code Guild </p>
+
+                        <div class="info">
+                            info here
+                        </div>
+                    
+                    </div>
+                        
+                    <div id="nnpt">
+                        <p class=" title" >Naval Nuclear Power Program</p>
+                        <div class="info">
+                            info here
+                        </div>
+                    </div>
+
+                        
+
+
+
+                    
+                </div>
+
             </div>
-            
-            
+
+
+        <div class="bottom">
             
             
            <div class="bottom-bottom">
-                <p><strong> Projects I've worked on:</strong></p>
+                <p class = "title" >Other Skills I have:</p>
+                <ul class="bottom-list" >
+                    <li>Quick Learner</li>
+                    <li>Effective Communicator</li>
+                    <li>Detail Oriented</li>
+
+                </ul>
+
+                <p class ='title' ><strong> Projects I've worked on:</strong></p>
 
                 <ul class = "bottom-list">
-                    <li></li>
+                    <li>PDX Code Guild Capstone</li>
                     <li></li>
                     <li></li>
                     <li></li>
@@ -95,6 +125,7 @@
             <a title="Free Code Camp Profile" href="https://www.freecodecamp.org/tadashi-croy"><i class="fab fa-free-code-camp"></i></a>
         </div>
         <hr>
+    </div>
     </div>
 </body>
 </html>
