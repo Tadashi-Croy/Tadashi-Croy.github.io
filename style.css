@@ -10,7 +10,6 @@
 }
 
 
-
 *{
     margin: 0;
     padding: 0;
@@ -61,6 +60,31 @@ h1{
   text-align: center;
     
 }
+.nnpt{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+.dropdown{
+    font-size: .9rem;
+    overflow: hidden;
+    height: 350px;
+    width: 75%;
+    border: 2px solid rgba(165, 165, 165, 0.664);
+    margin: auto;
+    border-radius: 2%;
+    transition: .6s ease-in;
+    background: white;
+    
+}
+
+.dropper{
+    cursor: pointer;
+}
+
+
+
+
 .top  p{
    
     width: 90%;
@@ -107,6 +131,7 @@ h1{
     margin-top: .5rem;
     margin-bottom: 0;
 }
+
 p{
     padding: .5rem;
 }
@@ -140,6 +165,30 @@ img{
 }
 
 
+/* reactive section */
+
+
+.undropped{
+    height: 1px; 
+    width: 35%;
+    transition: .2s;
+}
+
+
+
+
+@media (max-width:330px) {
+    .inWorkSign{
+        display: none;
+    }
+    .dropdown{
+        width: unset;
+        height: unset;
+    }
+}
+
+
+
 @media screen and (min-width: 600px) {
     
    body{
@@ -153,9 +202,21 @@ img{
    .inWorkSign{
        width:33%;
    }
+   .dropdown{
+        font-size: 1rem;
+        height: unset;
+   }
+   
+    .undropped{
+        height: 1px; 
+        width: 35%;
+        transition: .2s;
+    }
+
 
     .bottom{
         display: flex;
+        justify-content: space-evenly;
 
     }  
     .bottom-list{
@@ -218,45 +279,10 @@ img{
         box-shadow: 2px -2px 3px 2px inset var(--clr-olive);
 
     }
-  
-    img{
-        border: 1px solid var(--clr-coral);
-        border-radius: 10%;
-        box-shadow: 2px 2px 3px 2px var(--clr-olive);
-        margin: 0;
-    }
+
+    
 
 
-
-
-/* 
-    .pond{
-        display: none;
-        border: 2px solid black;
-        box-shadow: 1px 2px 3px 1px;
-        border-radius: 14rem;
-        z-index: 0;
-        position: relative;
-        right: 13rem;
-        bottom: 20rem;
-        float: right;
-        width: 50vw;
-        height:55vh;
-        background-color: var(--clr-bluegray);
-        opacity: .5;
-        transform: rotateX(-82deg) rotateZ(-51deg);
-        perspective: 100px;
-
-    }
-    .pond-hr{
-        display: none;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 1px;
-        background: gray;
-        z-index: 10;
-    } */
 
 
 }

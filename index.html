@@ -48,18 +48,26 @@
                 <div class="schools">
                     
                     <div class="pdxcode">
-                        <p class="title">PDX Code Guild </p>
+                        <p class="title dropper" @click="drop2 = !drop2">PDX Code Guild </p>
 
-                        <div class="info">
-                            info here
+                        <div class="info dropdown" :class="{undropped: drop2 }" >
+                            <q>Our students learn fundamentals in Python which we expand upon with JavaScript, HTML5, and CSS3 into full stack development with one of Python’s most popular and widely used frameworks: Django.
+                            <br>
+                            <br>
+                            In addition to Full-Stack Python (Which includes Python, HTML, CSS, JavaScript, Django, Database design, API’s and more), Bootcamp students learn all of the foundational professional skills programmers use everyday in almost every programming language.</q>
+                             <p>- <a href="https://pdxcodeguild.com/" target="_blank">Pdx Code Guild</a></p>
                         </div>
                     
                     </div>
                         
                     <div id="nnpt">
-                        <p class=" title" >Naval Nuclear Power Program</p>
-                        <div class="info">
-                            info here
+                        <p class=" title dropper" @click="drop1 = !drop1" >Naval Nuclear Power Program</p>
+                        <!-- Drop Downs -->
+
+                        <div class="info dropdown" :class="{undropped: drop1 }"  >
+                            <q>Mission: Train officer and enlisted students in the science and engineering fundamental to the design, operation and maintenance of naval nuclear propulsion plants. <br>
+                            The naval nuclear program is widely acknowledged as having the most demanding academic program in the U.S. military. Academics proceed at a rapid pace with high academic standards enforced in all subjects. Students typically spend 40-45 hours per week in the classroom with an additional 10 to 35 hours per week of study outside of lecture hours. </q>
+                            <p>- <a href="https://www.navsea.navy.mil/Home/NNPTC/powerschool.aspx" target="_blank">www.navsea.navy.mil </a></p>
                         </div>
                     </div>
 
@@ -77,7 +85,7 @@
             
             
            <div class="bottom-bottom">
-                <p class = "title" >Other Skills I have:</p>
+                <p class = "title" >Top Skills I have:</p>
                 <ul class="bottom-list" >
                     <li>Quick Learner</li>
                     <li>Effective Communicator</li>
