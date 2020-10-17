@@ -60,6 +60,10 @@ h1{
   text-align: center;
     
 }
+.explainer{
+    font-weight: 500;
+    color: black;
+}
 .nnpt{
     display: flex;
     flex-direction: column;
@@ -94,8 +98,8 @@ h1{
     cursor: pointer;
     font-size: 1.1rem;
     font-weight: 600;
-    background: rgba(255, 255, 255, 0.055);
-
+    background: rgba(255, 255, 255, 0.103);
+    width: 35%;
 }
 
 
@@ -203,7 +207,7 @@ img{
     }
 }
 
-
+/* Responsive Section */
 
 @media screen and (min-width: 600px) {
     
@@ -273,11 +277,45 @@ img{
        justify-content: space-evenly;
    }
    .top-main p{
+       background: white;
        width: 45%;
-       border: 4px rgba(0, 0, 0, 0.568) outset;
+       border: 2px rgba(0, 0, 0, 0.253) outset;
        border-radius: 5px;
-       box-shadow: 1px 2px 3px 1px;
+       box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.185);
    }
+   .schools{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-evenly;
+   }
+   .schools> *{
+       width: 35%;
+       
+   }
+   .dropper{
+       background: white;
+       border-radius: 4px;
+       border: 1px solid rgba(0, 0, 0, 0.336);
+
+   }
+   .dropdown{
+      margin-top: 0;
+
+   }
+
+   .inner-text{
+       background: #a1ba891a;
+       
+   }
+   .bottom{
+       margin:2rem 0 1rem 0;
+   }
+   .bottom-bottom{
+       width: 100%;
+       display: flex;
+       justify-content: space-around;
+   }
+   
 
     .bottom-bottom p{
         border: 1px solid var(--clr-periwink);
@@ -308,7 +346,3 @@ img{
 }
 
 
-
-@keyframes{
-
-}

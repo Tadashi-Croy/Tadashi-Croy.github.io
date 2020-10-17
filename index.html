@@ -40,40 +40,34 @@
         </div>
         
          <div class="top">
-                
+                <!-- Another Picture goes her A wide one -->
                 <img src="https://picsum.photos/200" alt="">
                 
-                <p>Since I've gone through a lot of non-traditional training that not everyone is familiar with, I like to give details about them:
+                <p class="explainer">Since I've gone through a lot of non-traditional training that not everyone is familiar with, I like to give details about them:
                 </p>
                 <div class="schools">
                     
-                    <div class="pdxcode">
+                    <div class="nnpt">
                         <p class="title dropper" @click="drop2 = !drop2">PDX Code Guild </p>
 
-                        <div class="info dropdown" :class="{undropped: drop2 }" >
-                            <q>Our students learn fundamentals in Python which we expand upon with JavaScript, HTML5, and CSS3 into full stack development with one of Python’s most popular and widely used frameworks: Django.
+                        <div class="info dropdown inner-text" :class="{undropped: drop2 }" >
+                            <q>Our students learn <span>fundamentals in Python </span> which we expand upon with <span>JavaScript, HTML5, and CSS3 into full stack development </span> with one of Python’s most popular and widely used frameworks: <span>Django</span>.
                             <br>
                             <br>
                             In addition to Full-Stack Python (Which includes Python, HTML, CSS, JavaScript, Django, Database design, API’s and more), Bootcamp students learn all of the foundational professional skills programmers use everyday in almost every programming language.</q>
                              <p>- <a href="https://pdxcodeguild.com/" target="_blank">Pdx Code Guild</a></p>
                         </div>
-                    
                     </div>
                         
                     <div id="nnpt">
                         <p class=" title dropper" @click="drop1 = !drop1" >Naval Nuclear Power Program</p>
-                        <!-- Drop Downs -->
 
-                        <div class="info dropdown" :class="{undropped: drop1 }"  >
+                        <div class="info dropdown inner-text" :class="{undropped: drop1 }"  >
                             <q>Mission: Train officer and enlisted students in the science and engineering fundamental to the design, operation and maintenance of naval nuclear propulsion plants. <br>
-                            The naval nuclear program is widely acknowledged as having the most demanding academic program in the U.S. military. Academics proceed at a rapid pace with high academic standards enforced in all subjects. Students typically spend 40-45 hours per week in the classroom with an additional 10 to 35 hours per week of study outside of lecture hours. </q>
+                            The <b>naval nuclear program is widely acknowledged as having the most demanding academic program in the U.S. military.</b> Academics proceed at a rapid pace with high academic standards enforced in all subjects. Students typically spend 40-45 hours per week in the classroom with an additional 10 to 35 hours per week of study outside of lecture hours. </q>
                             <p>- <a href="https://www.navsea.navy.mil/Home/NNPTC/powerschool.aspx" target="_blank">www.navsea.navy.mil </a></p>
                         </div>
                     </div>
-
-                        
-
-
 
                     
                 </div>
@@ -85,25 +79,26 @@
             
             
            <div class="bottom-bottom">
-                <p class = "title" >Top Skills I have:</p>
-                <ul class="bottom-list" >
-                    <li>Quick Learner</li>
-                    <li>Effective Communicator</li>
-                    <li>Detail Oriented</li>
+               <div class="skills">
+                    <p class = "title" >Top Skills I have:</p>
+                    <ul class="bottom-list" >
+                        <li>Quick Learner</li>
+                        <li>Effective Communicator</li>
+                        <li>Detail Oriented</li>
 
-                </ul>
+                    </ul>
+                </div>
+                <div class="projects">
+                    <p class ='title' ><strong> Projects I've worked on:</strong></p>
 
-                <p class ='title' ><strong> Projects I've worked on:</strong></p>
+                    <ul class = "bottom-list">
+                        <li>PDX Code Guild Capstone</li>
+                        <li>Pawsitive Focus Website</li>
+                        <li></li>
+                        <li></li>
 
-                <ul class = "bottom-list">
-                    <li>PDX Code Guild Capstone</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-
-
-
-                </ul>
+                    </ul>
+                </div>
                 
                 
                 
@@ -127,7 +122,7 @@
         <a href="mailto:contact@andrewcroy.dev" class= "email"> Contact Me! <i class="far fa-envelope-open"></i></a>
         <div class="links">
             Check me out:
-            <a id="resume" href="/files/resume.doc" title="Resume"><i class="far fa-file-word"></i></a> 
+            <a id="resume" href="/file/resume.doc" title="Resume"><i class="far fa-file-word"></i></a> 
             <a href="https://www.linkedin.com/in/andrewtcroy/"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/Tadashi-Croy/Tadashi-Croy.github.io"><i class="fab fa-github"></i></a>
             <a title="Free Code Camp Profile" href="https://www.freecodecamp.org/tadashi-croy"><i class="fab fa-free-code-camp"></i></a>
